@@ -1,0 +1,19 @@
+# LF everywhere. INV-5a's byte-identical round trip does not survive CRLF, and an
+# editor with a misconfigured core.autocrlf, or an edit made through the GitHub web
+# UI, would otherwise break `jamground-validate --check` on their first save.
+#
+# This file is a convenience, not the gate. The gate is jamground-validate reading raw
+# bytes and rejecting any \r, any BOM, any trailing whitespace, any tab, and any file
+# not ending in exactly one \n (site repo, docs/02 §10).
+* text=auto eol=lf
+
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.md     text eol=lf
+*.svg    text eol=lf
+
+content/media/*.jpg  binary
+content/media/*.png  binary
+content/media/*.webp binary
+content/media/*.avif binary
+content/media/*.gif  binary
