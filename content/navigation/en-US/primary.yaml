@@ -1,0 +1,15 @@
+id: 01M0BSHMKY75QZ2M7G25BQ4ACB
+translationOf: 01M0BSHKMPAQGNF346VXG9715H
+locale: en-US
+slug: primary
+title: Primary navigation
+status: published
+publishedAt: '2026-08-01T09:00:00Z'
+updatedAt: '2026-08-01T09:00:00Z'
+items:
+  - label: Home
+    ref: 01M0BSHXD6061K8J3359HYTZM4
+  - label: Pricing
+    ref: 01M0BSHVEPWM85ZVH33CCVB7P2
+  - label: Documentation
+    href: https://github.com/ulid/spec
