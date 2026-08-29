@@ -6,7 +6,7 @@ slug: example-post
 title: Pump up the Jam!
 status: published
 publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-29T16:39:03Z'
+updatedAt: '2026-08-29T16:43:41Z'
 author: 01M143VNARFS53GN4MRZ48TMJ9
 tags:
   - example
