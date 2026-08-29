@@ -1,0 +1,11 @@
+id: 01M143VMBG3P9TE12W2BQ3SWX8
+translationOf: 01M143VNARFS53GN4MRZ48TMJ9
+locale: en-US
+slug: example-author
+title: Example Author
+status: published
+publishedAt: '2026-08-28T12:00:00Z'
+updatedAt: '2026-08-28T12:00:00Z'
+name: Example Author
+role: Editor
+bio: Writes and edits the example content used to demonstrate this repository.

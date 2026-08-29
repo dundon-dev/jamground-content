@@ -1,0 +1,14 @@
+id: 01M143VEG04JRXAX5JYES4JXZ0
+translationOf: 01M143VFF8TN0D6FNX3S6M5T49
+locale: en-US
+slug: home
+title: Home
+status: published
+publishedAt: '2026-08-28T12:00:00Z'
+updatedAt: '2026-08-28T12:00:00Z'
+blocks:
+  - type: heading
+    level: 2
+    text: Welcome
+  - type: paragraph
+    text: 'This site demonstrates the shape of the content in this repository: one page, one post, one author and one navigation menu.'

@@ -1,0 +1,5 @@
+defaultLocale: en-US
+locales:
+  - en-US
+siteName: Jamground
+baseUrl: https://example.org/
