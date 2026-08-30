@@ -3,10 +3,10 @@ id: 01M143VJD0M62DY0E3BGA9SMF0
 translationOf: 01M143VKC8K661JQ2GXPC0K392
 locale: en-US
 slug: example-post
-title: Pump up the Jam!
+title: Let's Jam!
 status: published
 publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-29T21:47:29Z'
+updatedAt: '2026-08-30T00:25:01Z'
 author: 01M143VNARFS53GN4MRZ48TMJ9
 tags:
   - example
