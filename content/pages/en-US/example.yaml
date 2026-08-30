@@ -2,10 +2,10 @@ id: 01M143VGEGRMNWHEQEMDEAP68N
 translationOf: 01M143VHDR61GWZ9Z89PHAPK4X
 locale: en-US
 slug: example
-title: Example page
+title: Example page!
 status: published
 publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-28T12:00:00Z'
+updatedAt: '2026-08-30T03:45:01Z'
 blocks:
   - type: heading
     level: 2
