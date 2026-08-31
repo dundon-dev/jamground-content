@@ -6,7 +6,7 @@ slug: example-post
 title: Let's Jam!!
 status: published
 publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-31T17:51:29Z'
+updatedAt: '2026-08-31T17:52:40Z'
 author: 01M143VNARFS53GN4MRZ48TMJ9
 tags:
   - example
