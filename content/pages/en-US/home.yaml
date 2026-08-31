@@ -5,10 +5,28 @@ slug: home
 title: Home
 status: published
 publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-28T12:00:00Z'
+updatedAt: '2026-08-31T18:40:00Z'
 blocks:
-  - type: heading
-    level: 2
-    text: Welcome
-  - type: paragraph
-    text: 'This site demonstrates the shape of the content in this repository: one page, one post, one author and one navigation menu.'
+  - type: hero
+    heading: Static sites, edited like WordPress
+    body: No database. No PHP in production. Content lives as reviewable files in git.
+    cta:
+      label: See an example page
+      ref: 01M143VHDR61GWZ9Z89PHAPK4X
+  - type: featureGrid
+    columns: 3
+    items:
+      - heading: Schema-validated
+        body: Every entity is checked against its collection schema before it ships.
+        icon: check
+      - heading: Editor-agnostic
+        body: Content is data, not serialized markup from one tool's block registry.
+        icon: code
+      - heading: No database
+        body: Files in git, validated in CI, are the source of truth.
+        icon: shield
+  - type: cta
+    heading: Ready to see it in action?
+    link:
+      label: Read the latest post
+      ref: 01M143VKC8K661JQ2GXPC0K392
