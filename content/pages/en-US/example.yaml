@@ -5,10 +5,7 @@ slug: example
 title: Hello World?
 status: published
 publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-31T17:55:47Z'
+updatedAt: '2026-08-31T18:10:00Z'
 blocks:
-  - type: heading
-    level: 2
-    text: Example page
   - type: paragraph
     text: This is a second page, separate from the home page, kept here to show that more than one page can exist.
