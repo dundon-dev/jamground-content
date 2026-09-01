@@ -1,0 +1,58 @@
+id: 01M1D24P9D6FCDR5AR9KE7CE03
+translationOf: 01M1D24P9D2T9ZQRXTQ7BPYBMG
+locale: en-US
+slug: how-to-use
+title: How to Use
+status: published
+publishedAt: '2026-08-31T23:30:00Z'
+updatedAt: '2026-08-31T23:30:00Z'
+seo:
+  title: How to Use
+  description: 'The editorial workflow: sign in, start a change, edit in wp-admin, save, send for review, publish.'
+blocks:
+  - type: heading
+    level: 2
+    text: How to Use
+  - type: paragraph
+    text: Editing happens in `wp-admin`, which opens in your browser. Five controls sit in the corner of the screen, and they run left to right in the order you use them.
+  - type: heading
+    level: 3
+    text: The workflow
+  - type: list
+    ordered: true
+    items:
+      - text: '**Sign in.** This identifies you, so the change you make is recorded as yours.'
+      - text: '**Start a change.** Do this before editing anything. It opens a change for your work to live in, and gives you the address of a preview where it can be seen.'
+      - text: "**Edit.** Use `wp-admin` normally. Save your work with WordPress's own Save or Update button as you go."
+      - text: '**Save this change.** This takes everything WordPress has saved and writes it into your change. The preview rebuilds automatically, within a minute or two.'
+      - text: '**Send for review.** This marks the change ready for someone to look at. Nothing is live yet.'
+      - text: '**Publish.** Once the change is approved, this puts it on the live site.'
+  - type: paragraph
+    text: Two things worth knowing about that sequence. **Save this change** is the step that updates the preview, so if you want to see your work, save first. And your work is not live until **Publish**, no matter how finished it looks in the editor.
+  - type: heading
+    level: 3
+    text: What wp-admin does, and does not, decide
+  - type: paragraph
+    text: You choose what a page is made of and what it says. You do not choose how it looks. Layout, spacing, colour and type come from the site's design system and are not editable here — the styling controls are removed rather than hidden, so there is nothing to adjust.
+  - type: paragraph
+    text: Blocks here use the site's own design system, so their colours, type and spacing are the site's — a block will not look wrong. **The page around them — the header, the footer, and anything that depends on other pages — is settled when you preview.** When the two disagree, the preview is right.
+  - type: heading
+    level: 3
+    text: What is available
+  - type: list
+    items:
+      - text: Paragraphs, headings, lists, quotes, code, tables and separators.
+      - text: Bold, italic, inline code and links, inside text.
+      - text: Pages, posts and authors. Nothing else has an editing screen, because nothing else is stored as content.
+  - type: paragraph
+    text: 'If a block or a control you expect is missing, that is deliberate: only the types the schema can represent are offered, because anything else could not be saved.'
+  - type: separator
+  - type: heading
+    level: 3
+    text: If something goes wrong
+  - type: list
+    items:
+      - text: '**A save fails.** The message will say why if it can. Nothing is lost — your work is still in WordPress, and you can save again.'
+      - text: '**The preview looks out of date.** It rebuilds on save, and takes a minute or two. Reload before assuming something is broken.'
+      - text: '**Content is missing when the editor opens.** Content that does not fit the schema is held back rather than shown in a form that could not be saved. The editor will say which.'
+      - text: '**You reload the tab mid-edit.** WordPress here is temporary and starts fresh each time, so save your change before closing the tab.'

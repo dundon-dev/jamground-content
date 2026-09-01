@@ -1,0 +1,52 @@
+id: 01M1D24P9D554W2HS4RXP4PYDE
+translationOf: 01M1D24P9DXVEX7MZQ5Z4WE2JJ
+locale: en-US
+slug: why-jamground
+title: Why Jamground
+status: published
+publishedAt: '2026-08-31T23:30:00Z'
+updatedAt: '2026-08-31T23:30:00Z'
+seo:
+  title: Why Jamground
+  description: Why this project pairs a familiar WordPress editor with a static build and no server-side WordPress at all.
+blocks:
+  - type: heading
+    level: 2
+    text: Why Jamground
+  - type: paragraph
+    text: Most teams publishing a content site face the same two-sided problem. Editors want a tool they already know. Everyone else wants to stop running a database-backed CMS on the public internet.
+  - type: paragraph
+    text: Those goals are usually treated as a trade. Jamground does not trade them.
+  - type: heading
+    level: 3
+    text: The bet
+  - type: paragraph
+    text: WordPress is the editing interface most content people already have in their hands. That familiarity is the product, not an implementation detail — so it is a fixed constraint here rather than one option among several.
+  - type: paragraph
+    text: 'But almost none of the cost of WordPress comes from its editor. It comes from running it: the database, the PHP process, the plugin surface, the patching, the backups, the fact that it is on the internet answering requests. WordPress Playground removes exactly that half. It is a real WordPress, compiled to WebAssembly, that boots in a browser tab and disappears when the tab closes.'
+  - type: paragraph
+    text: So editors get `wp-admin`, and no WordPress is ever exposed to a visitor.
+  - type: heading
+    level: 3
+    text: What content actually is here
+  - type: paragraph
+    text: Content is files. Each page, post and author is a small file validated against a published schema, stored in a git repository of its own, separate from the code that builds the site.
+  - type: list
+    items:
+      - text: Content has a history, by construction — who changed what, when, and why.
+      - text: A change can be read and approved before it is live, the same way code is.
+      - text: Content is not locked inside a database in a format only one application understands.
+      - text: The build refuses to publish content that does not validate, so a broken page fails loudly rather than shipping quietly.
+  - type: heading
+    level: 3
+    text: What it costs
+  - type: paragraph
+    text: This is the honest part, and it is short.
+  - type: list
+    items:
+      - text: Editors get materially less than stock WordPress. Only the block types the schema can represent are available, and layout and styling are not editable in `wp-admin` at all.
+      - text: The editor is close, not exact. A block carries the site's own colours, type and spacing, so it will not look wrong — but the page around it, and anything that depends on another page, is only settled when you preview the change.
+      - text: Publishing is a workflow, not a button. A change is drafted, saved, reviewed and then published, which is slower than typing into a live site and is meant to be.
+      - text: Adding a new kind of block is a deliberate schema change, not an afternoon.
+  - type: paragraph
+    text: 'Each of those is a consequence of the same decision: nothing reaches the published site that has not been validated and reviewed. Where that is the wrong trade, this is the wrong tool.'
