@@ -4,11 +4,33 @@ locale: en-US
 slug: home
 title: Home
 status: published
-publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-28T12:00:00Z'
+publishedAt: '2026-08-31T23:30:00Z'
+updatedAt: '2026-08-31T23:30:00Z'
+seo:
+  title: Jamground — a WordPress editor, a static site, no database
+  description: Jamground is a Jamstack site edited in wp-admin running in the browser, stored as files in git, and deployed as static HTML.
 blocks:
   - type: heading
     level: 2
-    text: Welcome
+    text: A WordPress editor. A static site. No database.
   - type: paragraph
-    text: 'This site demonstrates the shape of the content in this repository: one page, one post, one author and one navigation menu.'
+    text: Jamground is a website whose content lives as plain files in git, is edited in `wp-admin`, and is published as static HTML. The unusual part is that no WordPress runs on any server — the editor is WordPress compiled to WebAssembly, running inside the browser tab of whoever is writing.
+  - type: paragraph
+    text: The result is a site with an editing experience people already know, and none of the operational surface that usually comes with it.
+  - type: heading
+    level: 3
+    text: What that buys you
+  - type: list
+    items:
+      - text: Nothing to patch. There is no PHP, no database and no WordPress on the server, so the usual maintenance and the usual attack surface are simply absent.
+      - text: Every change is reviewable. Editors work in `wp-admin`; what comes out is a set of file changes someone can read and approve before anything goes live.
+      - text: Every change gets its own staging site, built automatically, at its own address.
+      - text: The published site is static files. It is fast, it is cheap to serve, and it keeps serving if everything else is down.
+  - type: heading
+    level: 3
+    text: Where to go next
+  - type: list
+    items:
+      - text: '**Why Jamground** — the problem this solves, and what it costs.'
+      - text: '**Architecture** — the three moving parts, and how a change reaches production.'
+      - text: '**How to Use** — the editorial workflow, start to finish.'

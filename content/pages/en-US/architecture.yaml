@@ -1,0 +1,76 @@
+id: 01M1D24P9D80JNNE87CB24NPJK
+translationOf: 01M1D24P9DMAF7CRDDHMJRVF2B
+locale: en-US
+slug: architecture
+title: Architecture
+status: published
+publishedAt: '2026-08-31T23:30:00Z'
+updatedAt: '2026-08-31T23:30:00Z'
+seo:
+  title: Architecture
+  description: The three moving parts of Jamground — content as files, an in-browser editor, and a static build — and how a change reaches production.
+blocks:
+  - type: heading
+    level: 2
+    text: Architecture
+  - type: paragraph
+    text: 'Three moving parts: content as files in git, an editor that runs entirely in the browser, and a static build that goes live by swapping a symlink. Each exists for a specific reason.'
+  - type: heading
+    level: 3
+    text: Content is files, in their own repository
+  - type: paragraph
+    text: There is no database. A page, post, author or navigation menu is a file with structured metadata at the top, validated against a schema that both the build and the editor import from the same place — so there is exactly one definition of what a valid page is.
+  - type: paragraph
+    text: 'Content lives in a repository separate from the code. The reason is blast radius, not tidiness: the editor can write to the content repository and to nothing else. The code, the build configuration and the deployment automation are never editor-writable.'
+  - type: heading
+    level: 3
+    text: The editor is WordPress, in the browser
+  - type: paragraph
+    text: Editors work in `wp-admin`. That `wp-admin` is not served by anything — it is WordPress Playground, a WebAssembly build of WordPress running inside the browser tab, booted fresh each time.
+  - type: paragraph
+    text: 'Because it is genuinely WordPress, the editing experience is the familiar one. Because it is ephemeral and client-side, it holds no data and enforces no permissions. Editing is a round trip rather than a live save: existing content is loaded into the editor, a person works on it, and on save the result is written back out as files.'
+  - type: paragraph
+    text: The block palette is restricted to the types the schema can represent, and the styling controls are removed. This is a content-quality mechanism, not a security one — the real boundary is what the editor is allowed to write, and what a human has to approve.
+  - type: heading
+    level: 3
+    text: The build is static
+  - type: paragraph
+    text: The site is built to static HTML. Links between pieces of content are resolved at build time, and a link that cannot be resolved fails the build rather than shipping as a broken href. A single flag decides whether draft content is included, which is the entire difference between a staging build and a production one.
+  - type: heading
+    level: 3
+    text: How a change reaches production
+  - type: list
+    ordered: true
+    items:
+      - text: An editor signs in and starts a change. A branch and a draft pull request are opened immediately, before any editing.
+      - text: They edit in `wp-admin` and save. The save writes the changed files as one commit.
+      - text: That commit triggers a staging build. The change gets its own site, at its own address.
+      - text: They send the change for review. A person reads the file changes and the staging site.
+      - text: Publishing merges the change, which triggers a production deploy.
+  - type: heading
+    level: 3
+    text: Deployment
+  - type: paragraph
+    text: A deploy builds into a fresh, timestamped directory, verifies the result, and only then swaps a symlink to point at it — a single atomic operation. A build that fails never becomes live; the previous release keeps serving, untouched. Rolling back is the same mechanism pointed at the previous release.
+  - type: paragraph
+    text: 'The server runs no PHP, no WordPress and no database. It serves static files and two small services: one that exchanges sign-in credentials, and one that receives notifications about changes.'
+  - type: heading
+    level: 3
+    text: The pieces, and what each is for
+  - type: table
+    head:
+      - Piece
+      - What it does
+    rows:
+      - - Content repository
+        - Every page, post and author, as validated files. The only thing the editor can write.
+      - - Code repository
+        - The build, the schema, the editor shell, the deployment automation. Never editor-writable.
+      - - Editor shell
+        - Boots WordPress in the browser, loads content in, writes changes back out.
+      - - Static build
+        - Turns content files into HTML. Refuses to build invalid content or broken links.
+      - - Staging builds
+        - One site per open change, built automatically, torn down when the change closes.
+      - - Production
+        - Static files behind a symlink that is swapped atomically on deploy.

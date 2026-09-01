@@ -5,11 +5,15 @@ slug: primary
 title: Primary navigation
 status: published
 publishedAt: '2026-08-28T12:00:00Z'
-updatedAt: '2026-08-31T12:00:00Z'
+updatedAt: '2026-08-31T23:30:00Z'
 items:
   - label: Home
     ref: 01M143VFF8TN0D6FNX3S6M5T49
-  - label: Example
-    ref: 01M143VHDR61GWZ9Z89PHAPK4X
+  - label: Why Jamground
+    ref: 01M1D24P9DXVEX7MZQ5Z4WE2JJ
+  - label: Architecture
+    ref: 01M1D24P9DMAF7CRDDHMJRVF2B
+  - label: How to Use
+    ref: 01M1D24P9D2T9ZQRXTQ7BPYBMG
   - label: Blog
     route: blog
