@@ -24,7 +24,7 @@ blocks:
     items:
       - text: Nothing to patch. There is no PHP, no database and no WordPress on the server, so the usual maintenance and the usual attack surface are simply absent.
       - text: Every change is reviewable. Editors work in `wp-admin`; what comes out is a set of file changes someone can read and approve before anything goes live.
-      - text: Every change gets its own staging site, built automatically, at its own address.
+      - text: Every change gets its own preview, built automatically, at its own address.
       - text: The published site is static files. It is fast, it is cheap to serve, and it keeps serving if everything else is down.
   - type: heading
     level: 3

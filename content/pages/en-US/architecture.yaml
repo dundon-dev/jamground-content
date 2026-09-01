@@ -35,7 +35,7 @@ blocks:
     level: 3
     text: The build is static
   - type: paragraph
-    text: The site is built to static HTML. Links between pieces of content are resolved at build time, and a link that cannot be resolved fails the build rather than shipping as a broken href. A single flag decides whether draft content is included, which is the entire difference between a staging build and a production one.
+    text: The site is built to static HTML. Links between pieces of content are resolved at build time, and a link that cannot be resolved fails the build rather than shipping as a broken href. A single flag decides whether draft content is included, which is the entire difference between a preview build and a production one.
   - type: heading
     level: 3
     text: How a change reaches production
@@ -44,8 +44,8 @@ blocks:
     items:
       - text: An editor signs in and starts a change. A branch and a draft pull request are opened immediately, before any editing.
       - text: They edit in `wp-admin` and save. The save writes the changed files as one commit.
-      - text: That commit triggers a staging build. The change gets its own site, at its own address.
-      - text: They send the change for review. A person reads the file changes and the staging site.
+      - text: That commit triggers a preview build. The change gets its own site, at its own address.
+      - text: They send the change for review. A person reads the file changes and the preview.
       - text: Publishing merges the change, which triggers a production deploy.
   - type: heading
     level: 3

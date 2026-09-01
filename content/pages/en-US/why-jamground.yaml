@@ -45,7 +45,7 @@ blocks:
   - type: list
     items:
       - text: Editors get materially less than stock WordPress. Only the block types the schema can represent are available, and layout and styling are not editable in `wp-admin` at all.
-      - text: The editor is an approximation. It shows the shape of a page, not its final appearance — the staging site for a change is the visual truth.
+      - text: The editor is close, not exact. A block carries the site's own colours, type and spacing, so it will not look wrong — but the page around it, and anything that depends on another page, is only settled when you preview the change.
       - text: Publishing is a workflow, not a button. A change is drafted, saved, reviewed and then published, which is slower than typing into a live site and is meant to be.
       - text: Adding a new kind of block is a deliberate schema change, not an afternoon.
   - type: paragraph
